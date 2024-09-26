@@ -1,0 +1,19 @@
+@keyframes subirDescer {
+    0%,
+    100% {
+        transform: translateY(0); /* Ponto inicial e final (posição original) */
+    }
+    50% {
+        transform: translateY(-20px); /* Ponto máximo de subida */
+    }
+}
+
+@keyframes subirDescer2 {
+    0%,
+    100% {
+        transform: translateY(0); /* Ponto inicial e final (posição original) */
+    }
+    50% {
+        transform: translateY(-10px); /* Ponto máximo de subida */
+    }
+}

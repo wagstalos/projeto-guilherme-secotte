@@ -1,0 +1,61 @@
+.s-about {
+    padding: 90px 0;
+
+    .d-flex {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    &__image {
+        width: 45%;
+    }
+
+    &__text {
+        width: 50%;
+        &-title {
+            line-height: 120%;
+            position: relative;
+            &::before {
+                content: " ";
+                position: absolute;
+                width: 62px;
+                height: 2px;
+                bottom: -8px;
+                background-color: #dedede;
+            }
+        }
+    }
+
+    // responsive
+    @include responsive(800px) {
+        .d-flex {
+            flex-direction: column-reverse;
+            margin-top: 2.5rem;
+        }
+
+        &__image {
+            width: 100%;
+            margin-top: 4rem;
+        }
+
+        &__text {
+            width: 100%;
+
+            p {
+                text-align: left;
+            }
+
+            &-title {
+                text-align: center;
+                &::before {
+                    display: none;
+                }
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

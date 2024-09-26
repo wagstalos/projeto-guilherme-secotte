@@ -1,0 +1,183 @@
+.s-contact {
+    padding: 90px 0;
+    background-color: #f5f7fa;
+
+    .title-section {
+        margin-bottom: 30px;
+    }
+
+    .maps {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $gutter * 10;
+
+        .text {
+            width: 50%;
+            .title {
+                margin-top: $gutter * 2;
+                font-weight: 600;
+                color: $brand-blue;
+            }
+            .maps-google {
+                margin-top: $gutter * 4;
+            }
+
+            ul {
+                display: flex;
+                margin-top: 30px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: $gutter;
+
+                    img {
+                        padding: 5px;
+                        background-color: #dbe9fb;
+                        border-radius: 5px;
+                        margin-right: 8px;
+                    }
+
+                    p {
+                        line-height: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .image {
+            width: 45%;
+        }
+    }
+
+    .d-flex {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+        justify-content: space-between;
+
+        .item {
+            width: 31%;
+            p {
+                color: $gray-300;
+            }
+            &:last-child {
+                p {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+
+    .card {
+        background-color: $white;
+        border-radius: 2px;
+        padding: $gutter * 3;
+        position: relative;
+
+        transition: all 0.3s ease-in-out;
+
+        h3 {
+            margin-top: 12px;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 12px;
+        }
+
+        &:hover {
+            background-color: $brand-blue;
+            color: $white;
+
+            h3,
+            p,
+            svg {
+                color: $white;
+            }
+
+            .btn-contact {
+                background-color: $white;
+            }
+        }
+    }
+
+    .btn-contact {
+        background-color: $brand-red;
+        padding: 9px 10px;
+
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 2px;
+        margin-top: $gutter * 3;
+        float: inline-end;
+
+        position: absolute;
+        right: 14px;
+        bottom: 14px;
+
+        margin-top: 16px;
+
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: translatex(3px);
+            }
+        }
+    }
+
+    @include responsive(800px) {
+        .maps {
+            flex-direction: column;
+
+            .text,
+            .image {
+                width: 100%;
+            }
+
+            .image {
+                margin-top: $gutter * 3;
+            }
+
+            .text {
+                ul {
+                    flex-direction: column;
+                    li {
+                        justify-content: flex-start;
+                        margin-right: $gutter;
+                        margin-top: $gutter * 2;
+
+                        img {
+                            padding: 8px;
+                            background-color: #dbe9fb;
+                            border-radius: 5px;
+                            margin-right: 8px;
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        p {
+                            line-height: 100%;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .d-flex {
+            flex-direction: column;
+
+            .item {
+                width: 100%;
+                margin-bottom: $gutter * 2;
+            }
+        }
+    }
+}

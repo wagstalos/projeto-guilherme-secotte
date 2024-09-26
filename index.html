@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/plugins.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <title>Guilherme</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#hero" class="logo">
+        <h3 class="logotipo">Guilherme Secotte</h3>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">Quem somos</a>
+            <!-- <img src="img/polygon.svg" alt="" /> -->
+          </li>
+          <li>
+            <a href="#servicos">Serviços </a>
+            <!-- <img src="img/polygon.svg" alt="" /> -->
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+            <!-- <img src="img/polygon.svg" alt="" /> -->
+          </li>
+        </ul>
+      </nav>
+
+
+      <a href="" class="btn-secondary d-flex align-center">Falar com especialista
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp ml-2" width="24"
+          height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- menu mobile -->
+    <div>
+      <!-- mobile menu -->
+      <div class="dots">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-category-2" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M14 4h6v6h-6z" />
+          <path d="M4 14h6v6h-6z" />
+          <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+          <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        </svg>
+      </div>
+
+      <div class="menu-mobile">
+        <div class="bg-dark"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-x" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="2" stroke="#453f51" fill="none" stroke-linecap="round"
+          stroke-linejoin="round" fill="#453f51">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18 6l-12 12"></path>
+          <path d="M6 6l12 12"></path>
+        </svg>
+
+        <ul class="menu-mobile__links">
+          <li>
+            <a href="#about">
+              <span>Quem somos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos">
+              <span>Serviços</span>
+            </a>
+          </li>
+
+
+          <li class="btn-contrast">
+            <a href="#contato">
+              <span>Contato</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- 
+        <div class="menu-mobile__icons">
+          <a href="" target="_blank" aria-label="instagram da Digital">
+            <svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                fill="#00d7d7 ">
+              </path>
+            </svg></a>
+          <a href="" target="_blank" aria-label="linkedin da Valhalla Digital">
+            <svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                fill="#00d7d7 ">
+              </path>
+            </svg></a>
+        </div> -->
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="s-hero" id="hero">
+    <div class="container">
+      <div class="d-flex">
+        <div class="s-hero__text" data-aos="fade-up" data-aos-duration="1000">
+          <p class="lead">Mestre em Psicologia Clínica - USP.
+            Psicólogo - UNESP.</p>
+          <h1 class="title">
+            Guilherme <strong class="color-red">Secotte</strong>
+          </h1>
+
+          <p class="description">
+            Atendimento presencial de jovens, adultos e idosos em consultório no Higienópolis – São Paulo e de modo
+            on-line para o Brasil e exterior.
+            Clique no botão abaixo para agendar uma primeira sessão ou para esclarecer dúvidas.
+          </p>
+
+          <button class="btn-primary d-flex align-center">
+            Entre em contato
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="34"
+              height="34" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+
+          </button>
+
+          <ul class="infos d-flex between desk-show" data-aos="fade-up" data-aos-duration="1000">
+            <li>
+              <h3 class="infos__title">01.</h3>
+              <p class="infos__description">Mestre em Psicologia Clínica </p>
+            </li>
+
+            <li>
+              <h3 class="infos__title">02.</h3>
+              <p class="infos__description">Psicanalista do campo de Freud e Lacan.</p>
+            </li>
+
+            <li>
+              <h3 class="infos__title">03.</h3>
+              <p class="infos__description">USP. Psicólogo - <br> UNESP</p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="s-hero__image" data-aos="fade-down" data-aos-duration="1000">
+          <img src="img/tag.svg" alt="" class="tag tag1" width="210px">
+          <img src="img/tag2.svg" alt="" class="tag tag2" width="180px">
+          <img src="img/guilherme.png" alt="mulher com laptop" lazy="loading" width="380px" height="auto">
+          <!-- <img src="img/selo.svg" class="selo" alt=""> -->
+        </div>
+      </div>
+
+      <ul class="infos d-flex between mob-show" data-aos="fade-up" data-aos-duration="1000">
+        <li>
+          <h3 class="infos__title">01.</h3>
+
+          <p class="infos__description">Mestre em Psicologia Clínica</p>
+        </li>
+
+        <li>
+          <h3 class="infos__title">02.</h3>
+          <p class="infos__description">Psicanalista do campo de Freud e Lacan.</p>
+        </li>
+
+        <li>
+          <h3 class="infos__title">03.</h3>
+          <p class="infos__description">USP. Psicólogo - UNESP</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="s-about" id="about">
+
+    <div class="container">
+      <span class="subtitle">Conheça</span>
+      <h2 class="title-section text-dark">Nossa História</h2>
+
+      <div class="d-flex">
+        <div class="s-about__image" data-aos="fade-right" data-aos-duration="1500">
+          <img src="img/guilherme.png" alt="empresa" lazy="loading" class="mx-auto">
+        </div>
+
+        <div class="s-about__text" data-aos="fade-up" data-aos-duration="1500">
+          <!-- 
+          <img src="img/icon-chart.svg" alt="ícone gráfico" title="icone"> -->
+          <h3 class="s-about__text-title"> Como eu posso te ajudar</h3>
+          <p class="mt-5">
+            A procura por ajuda profissional geralmente parte de uma demanda que cesse alguma forma sofrimento, como
+            sintomas ou conflitos subjetivos, da busca por uma melhor qualidade de vida ou pelo desejo de
+            autoconhecimento.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <section class="s-service" id="servicos">
+    <div class="container">
+      <span class="subtitle">Nosso serviços</span>
+      <h2 class="title-section text-dark">Escolha seu plano</h2>
+      <p class="text-center">Temos um plano ideal para sua empresa </p>
+
+      <div class="box-container d-flex">
+
+        <div class="box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="d-flex-price">
+            <h4><strong>Normal</strong> </h4>
+            <h4 class="price js-normal">Consultar</h4>
+          </div>
+
+          <ul>
+            <li><img src="img/check.svg" alt="check" /> Abrir empresa</li>
+            <li><img src="img/check.svg" alt="check" />Gerar das mensalmente</li>
+            <li><img src="img/check.svg" alt="check" />Relatório anual</li>
+            <li class="text-cancel"><img src="img/cancel.svg" alt="check" />Gerar nota fiscal</li>
+            <li class="text-cancel"><img src="img/cancel.svg" alt="check" />Fechamento de empresa</li>
+            <li class="text-cancel"><img src="img/cancel.svg" alt="check" />Suporte</li>
+          </ul>
+
+          <a href="" class="btn-price">Assinar</a>
+
+        </div>
+
+        <div class="box" data-aos="fade-down" data-aos-duration="1000">
+          <span class="badge">Recomendado</span>
+          <div class="d-flex-price">
+            <h4><strong>Premium</strong> </h4>
+            <h4 class="price js-premium">Consultar</h4>
+          </div>
+
+          <ul>
+            <li><img src="img/check.svg" alt="check" /> Abrir empresa</li>
+            <li><img src="img/check.svg" alt="check" />Gerar das mensalmente</li>
+            <li><img src="img/check.svg" alt="check" />Relatório anual</li>
+            <li><img src="img/check.svg" alt="check" />Gerar nota fiscal</li>
+            <li><img src="img/check.svg" alt="check" />Fechamento de empresa</li>
+            <li><img src="img/check.svg" alt="check" />suporte</li>
+          </ul>
+
+          <a href="" class="btn-price">Assinar</a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+
+
+  <section class="s-contact" id="contato">
+    <span class="subtitle">Contato</span>
+    <h2 class="title-section text-dark">Fale conosco</h2>
+    <p class="text-center">
+      Caso tenha preferencia em realizar o atendimento presencialmente, este é o endereço do consultório:
+
+    </p>
+
+    <div class="container">
+
+
+      <div class="d-flex">
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+            <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+          </svg>
+          <h3>Whatsapp</h3>
+          <p>(11) 98554-7723</p>
+
+          <a href="" class="btn-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <h3>E-mail</h3>
+          <p>contato@guiherme.com.br</p>
+          <a href="" class="btn-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="card item">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-11" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+            <path d="M12 12l-2 -3" />
+            <path d="M12 7v5" />
+          </svg>
+          <h3>Atendimento</h3>
+          <p>
+            Segunda à sexta das 08:00h às 18:00h</p>
+          <a href="" class="btn-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20"
+              height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M13 18l6 -6" />
+              <path d="M13 6l6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="maps">
+        <div class="text">
+          <img src="img/icon-address.svg" alt="icone endereço">
+
+          <h3 class="title">Nosso escritório</h3>
+
+          <p>R. Itacolomi, 333 - Higienópolis | São Paulo - SP, 01239-020</p>
+
+          <ul>
+            <li>
+              <img src="img/car-solid.svg" alt="" width="24px" height="24px">
+              <p>Estacionamento
+                com manobrista</p>
+
+            </li>
+            <li>
+              <img src="img/subway-sloid.svg" alt="" width="24px" height="24px">
+              <p>A 600 metros da Estação Higienópolis-Mackenzie</p>
+            </li>
+            <li>
+              <img src="img/wheelchair-solid.svg" alt="" width="24px" height="24px">
+              <p>Acessível para
+                deficientes físicos</p>
+            </li>
+          </ul>
+
+          <div class="maps-google">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7315.196052332108!2d-46.65625800000001!3d-23.546956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5830b3047101%3A0xa3e843c4b2bf87bd!2sR.%20Itacolomi%2C%20333%20-%20Higien%C3%B3polis%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001239-020%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1727297139387!5m2!1spt-BR!2sus"
+              width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="img/escritorio.png" alt="escritorio">
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container color-dark">
+
+      <div class="d-flex">
+
+        <a href="#hero" class="" id="logo">
+
+          <h2 class="logotipo">Guilherme Secotte</h2>
+
+          <p class="footer_description mt-4">Fundamentada em valores de integridade e excelência.</p>
+        </a>
+
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#about">Quem somos</a></li>
+            <li><a href="#atuacao">Serviços</a></li>
+            <li><a href="#contato">Contato</a> </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li>
+              <span>
+                <img src="img/icon-clock.svg" alt="icone relogio">
+              </span>
+
+              <span> Segunda à sexta das 08:00h às 18:00h</span>
+
+            </li>
+            <li>
+              <span>
+                <img src="img/icon-mail.svg" alt="icone email">
+              </span>
+              <a href="mailto:contato@guilherme.com.br">contato@guilherme.com.br</a>
+
+            </li>
+
+            <li> <span>
+                <img src="img/icon-whats.svg" alt="icone whatsapp">
+              </span>
+              <!-- <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5517991159476">Whatsapp</a> -->
+              <a
+                href="https://api.whatsapp.com/send?l=pt_BR&phone=5517991159476&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site.">Enviar
+                WhatsApp</a>
+
+            </li>
+
+            <li> <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="27"
+                  height="27" viewBox="0 0 24 24" stroke-width="2" stroke="#3E81D1" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" />
+                </svg>
+              </span>
+
+              <a
+                href="https://api.whatsapp.com/send?l=pt_BR&phone=5517991159476&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site.">ccmadvocacia</a>
+
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="credits">
+      <a href="#hero" class="btn-top" aria-label="Botão para subir para o topo do site">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrow-narrow-up" width="24" height="24"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#3E81D1" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M16 9l-4 -4" />
+          <path d="M8 9l4 -4" />
+        </svg></a>
+      <p class="d-center color-light text-center">Voltar ao topo</p>
+
+
+      <div class="container wps-games">
+        <div><b> © CCM Advogados 2024.</b> All rights reserved. </div>
+
+
+
+        <div class="d-flex align-center">
+          Desenvolvido por: <a href="https://wpsgames.com.br"><img src="https://wpsgames.com.br/img/logo.png"
+              alt="wps games" width="30px"></a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+  <div class="btn-whats" id="whatsAppBtn" style="display: block;">
+    <a href="https://api.whatsapp.com/send?l=pt_BR&amp;phone=55119999999" target="_blank"
+      aria-label="instagram da backlgrs"><svg xmlns="http://www.w3.org/2000/svg"
+        class="icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+        <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+        </path>
+      </svg>
+    </a>
+
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/all.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

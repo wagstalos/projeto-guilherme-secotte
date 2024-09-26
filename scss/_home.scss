@@ -1,0 +1,205 @@
+.s-hero {
+    width: 100%;
+    padding-top: 8rem;
+    height: 100vh;
+    @include flex(row, center, center);
+
+    background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #e1faff 1%, rgba(218, 247, 245, 0) 98.72%);
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .d-flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn-primary {
+        svg {
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transform: translateX(8px);
+            }
+        }
+    }
+
+    &__text {
+        // margin-bottom: 3.9rem;
+        width: 50%;
+
+        .lead {
+            display: flex;
+            align-items: center;
+            color: $brand-red;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .title {
+            font-size: 6.5rem;
+            line-height: 120%;
+            font-weight: 700;
+
+            color: $black;
+            max-width: 74rem;
+        }
+
+        .description {
+            max-width: 50rem;
+            margin-top: 3.4rem;
+            margin-bottom: 4rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $gray-500;
+            opacity: 0.8;
+        }
+    }
+
+    .mob-show {
+        display: none;
+    }
+
+    &__image {
+        position: relative;
+        width: 45%;
+
+        // .selo {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 20px;
+        // }
+
+        .tag {
+            padding: 4px;
+            position: absolute;
+            backdrop-filter: blur(5px);
+            background-color: rgb(171 171 171 / 55%);
+            border: 1px solid #c4c4c447;
+        }
+
+        .tag1 {
+            position: absolute;
+            top: 32%;
+            left: -5%;
+            /* Adicionando animação */
+            animation: subirDescer2 5s ease-in-out infinite; /* Duração de 3 segundos, repetição infinita */
+        }
+
+        .tag2 {
+            right: 4px;
+            bottom: 21px;
+            /* Adicionando animação */
+            animation: subirDescer 6s ease-in-out infinite; /* Duração de 3 segundos, repetição infinita */
+        }
+
+        img {
+            border-radius: 10px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+
+    .infos {
+        max-width: 100%;
+        margin-top: $gutter * 10;
+
+        li {
+            background-color: #ffffff;
+            border: 1px solid #f1f1f1;
+            padding: 9px;
+            transition: all 0.3 ease-in;
+            flex: 1;
+            margin-right: 16px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: #0d1e2d;
+            }
+        }
+
+        &__title {
+            color: $brand-red;
+            font-size: 2.5rem;
+        }
+
+        &__description {
+            font-size: 1.5rem;
+            color: $gray-500;
+        }
+    }
+
+    @include responsive(1024px) {
+        &__text {
+            .title {
+                font-size: 4rem;
+                line-height: 110%;
+            }
+        }
+    }
+
+    @include responsive(800px) {
+        padding-top: 12rem;
+        height: auto;
+
+        .d-flex {
+            flex-direction: column;
+        }
+
+        &__text {
+            text-align: center;
+            width: 100%;
+
+            .btn-primary {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+
+            .description {
+                max-width: 100%;
+                margin: 3rem auto;
+            }
+
+            .lead {
+                align-items: center;
+                justify-content: center;
+                span {
+                    display: none;
+                }
+            }
+
+            .desk-show {
+                display: none;
+            }
+        }
+
+        .mob-show {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        .infos {
+            max-width: 100%;
+            margin-left: 0;
+            flex-direction: row;
+        }
+    }
+
+    @include responsive(400px) {
+        .btn-primary {
+            width: 100%;
+        }
+
+        .infos {
+            text-align: center;
+            margin-bottom: $gutter * 2;
+        }
+    }
+}

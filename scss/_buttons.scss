@@ -1,0 +1,45 @@
+.btn-primary,
+.btn-secondary {
+
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+    border-radius: 50px;
+
+}
+
+.btn-primary {
+    background-color: #3e81d1;
+    font-weight: 500;
+    color: $brand-black;
+    transition: background-color 0.3s;
+    color: $white;
+
+
+    &:hover {
+        background-color: #3876c3;
+    }
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0);
+    color: $white;
+    transition: all 0.3s ease-in;
+
+    border: 1px solid $brand-red;
+
+    &:hover {
+        background-color: $brand-red;
+        color: $white;
+    }
+}
+
+@include responsive(600px) {
+    .btn-primary {
+        line-height: 0.8rem;
+        height: 45px;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+    }
+}
