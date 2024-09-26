@@ -4,7 +4,7 @@
     height: 100vh;
     @include flex(row, center, center);
 
-    background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #e1faff 1%, rgba(218, 247, 245, 0) 98.72%);
+    background: linear-gradient(180deg, rgba(218, 247, 245, 0) 0%, #e1faff 1%, rgba(218, 247, 245, 0) 98.72%);
     justify-content: space-around;
     flex-wrap: wrap;
 
@@ -26,13 +26,12 @@
     }
 
     &__text {
-        // margin-bottom: 3.9rem;
         width: 50%;
 
         .lead {
             display: flex;
             align-items: center;
-            color: $brand-red;
+            color: $brand-color-main;
             font-size: 1.6rem;
             font-weight: 500;
         }
@@ -58,19 +57,9 @@
         }
     }
 
-    .mob-show {
-        display: none;
-    }
-
     &__image {
         position: relative;
         width: 45%;
-
-        // .selo {
-        //     position: absolute;
-        //     top: 0;
-        //     right: 20px;
-        // }
 
         .tag {
             padding: 4px;
@@ -83,15 +72,13 @@
         .tag1 {
             position: absolute;
             top: 32%;
-            left: -5%;
-            /* Adicionando animação */
-            animation: subirDescer2 5s ease-in-out infinite; /* Duração de 3 segundos, repetição infinita */
+            left: 0;
+            animation: subirDescer2 5s ease-in-out infinite;
         }
 
         .tag2 {
             right: 4px;
             bottom: 21px;
-            /* Adicionando animação */
             animation: subirDescer 6s ease-in-out infinite; /* Duração de 3 segundos, repetição infinita */
         }
 
@@ -102,12 +89,16 @@
         }
     }
 
+    .mob-show {
+        display: none;
+    }
+
     .infos {
         max-width: 100%;
         margin-top: $gutter * 10;
 
         li {
-            background-color: #ffffff;
+            background-color: $white;
             border: 1px solid #f1f1f1;
             padding: 9px;
             transition: all 0.3 ease-in;
@@ -116,12 +107,12 @@
             border-radius: 8px;
 
             &:hover {
-                background-color: #0d1e2d;
+                background-color: $black;
             }
         }
 
         &__title {
-            color: $brand-red;
+            color: $brand-color-main;
             font-size: 2.5rem;
         }
 
@@ -131,16 +122,17 @@
         }
     }
 
-    @include responsive(1024px) {
+    //responsive
+    @include responsive($laptop) {
         &__text {
             .title {
-                font-size: 4rem;
+                font-size: 5rem;
                 line-height: 110%;
             }
         }
     }
 
-    @include responsive(800px) {
+    @include responsive($tablet) {
         padding-top: 12rem;
         height: auto;
 
@@ -183,23 +175,39 @@
 
         &__image {
             width: 100%;
+            .tag1 {
+                top: 50%;
+            }
         }
 
         .infos {
             max-width: 100%;
             margin-left: 0;
             flex-direction: row;
+            margin-top: 40px;
+            li {
+                display: flex;
+                text-align: start;
+                align-items: center;
+                margin-right: 0;
+                margin-top: $gutter;
+
+                h3 {
+                    margin-right: $gutter;
+                }
+            }
         }
     }
 
-    @include responsive(400px) {
+    @include responsive($mobile) {
         .btn-primary {
             width: 100%;
         }
 
-        .infos {
-            text-align: center;
-            margin-bottom: $gutter * 2;
+        &__text {
+            .description {
+                font-size: 1.6rem;
+            }
         }
     }
 }

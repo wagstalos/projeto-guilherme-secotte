@@ -8,8 +8,7 @@ header {
     z-index: 12;
 
     border-bottom: 1px solid #ededed;
-    // background-color: $white;
-    backdrop-filter: blur(10px);
+    background-color: $white;
 
     .logo {
         font-weight: 700;
@@ -71,7 +70,7 @@ header {
                 }
 
                 &:hover {
-                    border-bottom: 2px solid $brand-red;
+                    border-bottom: 2px solid $brand-color-main;
 
                     a {
                         color: $brand-blue-light;
@@ -81,7 +80,7 @@ header {
         }
     }
 
-    @include responsive(1024) {
+    @include responsive(1024px) {
         nav {
             ul {
                 li {
@@ -176,7 +175,7 @@ header {
 
 .dots {
     color: $white;
-    background-color: $brand-red;
+    background-color: $brand-color-main;
     padding: $gutter;
     border-radius: $border-radius * 10;
     margin-right: $gutter * 2;

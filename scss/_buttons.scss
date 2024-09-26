@@ -1,12 +1,10 @@
 .btn-primary,
 .btn-secondary {
-
     padding: 0 3rem;
     font-size: 1.8rem;
     line-height: 4.5rem;
     font-weight: 500;
     border-radius: 50px;
-
 }
 
 .btn-primary {
@@ -15,7 +13,6 @@
     color: $brand-black;
     transition: background-color 0.3s;
     color: $white;
-
 
     &:hover {
         background-color: #3876c3;
@@ -27,10 +24,10 @@
     color: $white;
     transition: all 0.3s ease-in;
 
-    border: 1px solid $brand-red;
+    border: 1px solid $brand-color-main;
 
     &:hover {
-        background-color: $brand-red;
+        background-color: $brand-color-main;
         color: $white;
     }
 }

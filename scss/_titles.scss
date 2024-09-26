@@ -13,7 +13,7 @@ h2 {
         width: 62px;
         height: 2px;
         bottom: -8px;
-        background-color: $brand-red;
+        background-color: $brand-color-main;
     }
 }
 
@@ -49,14 +49,17 @@ p {
     font-size: 1.8rem;
     line-height: 150%;
     color: $gray-600;
+
+    @include responsive($tablet) {
+        font-size: 1.6rem;
+    }
 }
 .subtitle {
-    // background-color: rgba(208, 255, 249, 0.451);
-    color: $brand-red;
+    color: $brand-color-main;
     display: table;
 
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 700;
     padding: 2px 15px;
     border-radius: 25px;
 

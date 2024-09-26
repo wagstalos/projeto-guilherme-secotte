@@ -1,6 +1,6 @@
 footer {
     background-color: $white;
-    color: #c6c5ce;
+    color: $gray-200;
     border-top: 2px solid #ecf2fb;
     padding-top: 8rem;
     font-size: 2rem;
@@ -12,6 +12,10 @@ footer {
 
     .footer_description {
         max-width: 100%;
+    }
+
+    .avatar {
+        align-items: center;
     }
 
     .d-flex {
@@ -27,7 +31,7 @@ footer {
             margin: $gutter 0;
 
             &:hover {
-                color: $brand-red;
+                color: $brand-color-main;
             }
         }
 
@@ -90,7 +94,7 @@ footer {
             }
 
             &:hover {
-                border: 1px solid $brand-red;
+                border: 1px solid $brand-color-main;
                 svg {
                     transform: translateY(-3px);
                 }
@@ -115,6 +119,10 @@ footer {
                 margin: ($gutter * 3) 0;
             }
         }
+
+        p {
+            align-items: center;
+        }
         .wps-games {
             margin-top: $gutter * 2;
             display: flex;
@@ -126,6 +134,11 @@ footer {
         .credits {
             z-index: 11;
             background-color: $green;
+        }
+
+        .footer_description {
+            text-align: center;
+            justify-content: center;
         }
     }
 }

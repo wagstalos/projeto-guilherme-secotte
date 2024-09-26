@@ -1,10 +1,10 @@
 @keyframes subirDescer {
     0%,
     100% {
-        transform: translateY(0); /* Ponto inicial e final (posição original) */
+        transform: translateX(0); /* Ponto inicial e final (posição original) */
     }
     50% {
-        transform: translateY(-20px); /* Ponto máximo de subida */
+        transform: translateX(-20px); /* Ponto máximo de subida */
     }
 }
 
