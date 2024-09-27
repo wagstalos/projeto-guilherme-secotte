@@ -50,9 +50,9 @@ p {
     line-height: 150%;
     color: $gray-600;
 
-    @include responsive($tablet) {
-        font-size: 1.6rem;
-    }
+    // @include responsive($tablet) {
+    //     font-size: 1.6rem;
+    // }
 }
 .subtitle {
     color: $brand-color-main;

@@ -35,7 +35,7 @@
             position: absolute;
             width: 80%;
             height: 475px;
-            background-color: #7ba0cc;
+            background-color: $blue;
             z-index: -1;
             right: 0;
             top: -100px;
@@ -43,7 +43,7 @@
         }
         .card {
             background-color: $white;
-            max-width: 450px;
+            max-width: 500px;
             padding: $gutter * 2;
             margin-right: $gutter * 2;
             border-radius: 8px;
@@ -80,7 +80,7 @@
                 font-size: 3.5rem;
                 margin-bottom: 50px;
                 span {
-                    color: #7ba0cc;
+                    color: $blue;
                     font-size: 6rem;
                 }
             }

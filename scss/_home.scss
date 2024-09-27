@@ -46,14 +46,13 @@
         }
 
         .description {
-            max-width: 50rem;
+            max-width: 55rem;
             margin-top: 3.4rem;
             margin-bottom: 4rem;
             font-weight: 400;
             font-size: 1.8rem;
             line-height: 150%;
             color: $gray-500;
-            opacity: 0.8;
         }
     }
 
@@ -103,12 +102,8 @@
             padding: 9px;
             transition: all 0.3 ease-in;
             flex: 1;
-            margin-right: 16px;
+            margin-right: $gutter * 2;
             border-radius: 8px;
-
-            &:hover {
-                background-color: $black;
-            }
         }
 
         &__title {
@@ -126,7 +121,7 @@
     @include responsive($laptop) {
         &__text {
             .title {
-                font-size: 5rem;
+                font-size: 6rem;
                 line-height: 110%;
             }
         }
@@ -157,8 +152,8 @@
             }
 
             .lead {
-                align-items: center;
-                justify-content: center;
+                margin: 0 auto;
+                max-width: 80%;
                 span {
                     display: none;
                 }
@@ -185,6 +180,7 @@
             margin-left: 0;
             flex-direction: row;
             margin-top: 40px;
+
             li {
                 display: flex;
                 text-align: start;
