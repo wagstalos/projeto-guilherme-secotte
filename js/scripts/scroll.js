@@ -21,3 +21,13 @@ function scrollTarget() {
 }
 
 scrollTarget();
+
+document.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  if (window.scrollY > 50) {
+    // Ajuste o valor de '50' para controlar o ponto de ativação
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});

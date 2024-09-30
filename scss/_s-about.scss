@@ -8,11 +8,17 @@
     }
 
     &__image {
-        width: 45%;
+        width: 55%;
     }
 
     &__text {
-        width: 50%;
+        width: 40%;
+        &-icon-brain {
+            background-color: aliceblue;
+            padding: 4px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
         &-title {
             line-height: 120%;
             position: relative;

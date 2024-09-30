@@ -9,6 +9,7 @@ header {
 
     border-bottom: 2px solid #c5dfff73;
     background-color: #e5faff;
+    transition: background-color 0.3s ease; /* Transição suave */
 
     .logo {
         font-weight: 700;
@@ -184,4 +185,9 @@ header {
     .icons-dots {
         display: none;
     }
+}
+
+/* Estilo quando o scroll for ativado */
+header.scrolled {
+    background-color: $white; /* Cor quando o scroll é detectado */
 }

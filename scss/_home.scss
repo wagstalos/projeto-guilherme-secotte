@@ -102,7 +102,7 @@
             padding: 9px;
             transition: all 0.3 ease-in;
             flex: 1;
-            margin-right: $gutter * 2;
+            margin-right: $gutter;
             border-radius: 8px;
             font-size: 1.8rem;
             color: red;
@@ -114,6 +114,7 @@
         }
 
         &__description {
+            font-weight: 500;
             font-size: 1.6rem;
             color: $gray-500;
         }
