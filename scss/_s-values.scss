@@ -67,6 +67,15 @@
                 background-image: url("../img/img3.webp");
             }
 
+            h3 {
+                background: #54545433;
+                backdrop-filter: blur(5px);
+                border-radius: 10px;
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #7272723b;
+            }
+
             h3,
             h4,
             p {
@@ -83,11 +92,11 @@
                 background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1));
                 pointer-events: none;
                 z-index: 0;
-                backdrop-filter: blur(0);
-                transition: all .3s ease-in;
+                backdrop-filter: blur(3px);
+                transition: all 0.3s ease-in;
             }
             &:hover::after {
-                backdrop-filter: blur(3px); /* Aplica o blur ao passar o mouse */
+                backdrop-filter: blur(0);
             }
         }
     }
@@ -98,12 +107,15 @@
             flex-direction: column;
             &__title {
                 max-width: 100%;
-                font-size: 2.8rem;
+                font-size: 3.5rem;
                 margin-top: 20px;
                 margin-bottom: 2rem;
+                text-align: center;
             }
             &__subtitle {
                 max-width: 100%;
+                font-size: 1.8rem;
+                text-align: center;
             }
         }
         .cards {
