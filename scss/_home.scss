@@ -104,6 +104,8 @@
             flex: 1;
             margin-right: $gutter * 2;
             border-radius: 8px;
+            font-size: 1.8rem;
+            color: red;
         }
 
         &__title {
@@ -112,7 +114,7 @@
         }
 
         &__description {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: $gray-500;
         }
     }
@@ -121,7 +123,7 @@
     @include responsive($laptop) {
         &__text {
             .title {
-                font-size: 6rem;
+                font-size: 4rem;
                 line-height: 110%;
             }
         }
@@ -188,7 +190,7 @@
                 margin-right: 0;
                 margin-top: $gutter;
 
-                h3 {
+                img {
                     margin-right: $gutter;
                 }
             }
@@ -197,7 +199,9 @@
 
     @include responsive($mobile) {
         .btn-primary {
-            width: 100%;
+            width: 80%;
+            padding: 2.5rem 3rem;
+            font-size: 1.7rem;
         }
 
         &__text {

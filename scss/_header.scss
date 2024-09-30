@@ -7,8 +7,8 @@ header {
     display: flex;
     z-index: 12;
 
-    border-bottom: 1px solid #ededed;
-    background-color: $white;
+    border-bottom: 2px solid #c5dfff73;
+    background-color: #e5faff;
 
     .logo {
         font-weight: 700;
@@ -175,7 +175,7 @@ header {
 
 .dots {
     color: $white;
-    background-color: $brand-color-main;
+    background-color: transparent;
     padding: $gutter;
     border-radius: $border-radius * 10;
     margin-right: $gutter * 2;
