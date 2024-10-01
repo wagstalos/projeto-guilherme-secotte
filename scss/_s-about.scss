@@ -1,5 +1,5 @@
 .s-about {
-    padding: 90px 0;
+    padding: 90px 0 180px 0;
 
     .d-flex {
         justify-content: space-between;
@@ -39,6 +39,7 @@
 
     // responsive
     @include responsive(800px) {
+        padding: 90px 0;
         .d-flex {
             flex-direction: column-reverse;
             margin-top: 2.5rem;
