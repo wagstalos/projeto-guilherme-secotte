@@ -3,6 +3,8 @@
     height: 600px;
     display: flex;
 
+    background-color: #e7f2ff;
+
     .d-flex {
         align-items: center;
         justify-content: center;
@@ -40,6 +42,7 @@
             right: 0;
             top: -100px;
             border-radius: 8px;
+            z-index: 0;
 
             background-image: url("../img/cerebro.jpg");
         }
