@@ -1,0 +1,64 @@
+.s-experience {
+    padding: 90px 0;
+
+    .d-flex {
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 80px;
+    }
+
+    &__text {
+        width: 60%;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            margin-bottom: $gutter * 2;
+
+            img {
+                margin-right: $gutter;
+            }
+        }
+    }
+    &__image {
+        width: 38%;
+        img {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &__btns {
+        width: 90%;
+        background-color: #f6f6f6;
+        border-radius: 16px;
+        margin-top: 40px;
+
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+
+        h3 {
+            margin-left: $gutter * 2;
+            margin-right: $gutter * 3;
+        }
+
+        a {
+            padding: 1.2rem 3rem;
+            font-size: 1.6rem;
+            border: 2px solid $gray-200;
+            color: $black;
+            border-radius: 8px;
+
+            margin-left: $gutter * 2;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                background-color: $gray-200;
+            }
+        }
+    }
+}
