@@ -22,8 +22,8 @@
         &-title {
             line-height: 120%;
             position: relative;
-            font-size: 4.8rem;
-            color: $black;
+            font-size: 4rem;
+            // color: $black;
             font-weight: 600;
 
             &::before {
@@ -34,6 +34,11 @@
                 bottom: -8px;
                 background-color: #dedede;
             }
+        }
+
+        b {
+            background-color: rgb(190, 223, 252);
+            font-weight: 500;
         }
     }
 
