@@ -3,8 +3,19 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8MJP9ZN');</script>
+  <!-- End Google Tag Manager -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -17,6 +28,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8MJP9ZN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header>
     <div class="container">
       <a href="#hero" class="logo">
@@ -40,7 +55,7 @@
       </nav>
 
 
-      <a href="" class="btn-secondary d-flex align-center">Agendar consulta
+      <a href="#" class="btn-secondary d-flex align-center" id="js-agendar-consulta">Agendar consulta
 
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp ml-2" width="24"
           height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
@@ -119,7 +134,7 @@
             Clique no botão abaixo para agendar uma primeira sessão ou para esclarecer dúvidas.
           </p>
 
-          <button class="btn-primary d-flex align-center">
+          <a href="#" class="btn-primary d-flex align-center" id="js-contact-hero">
             Entre em contato
 
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="34"
@@ -131,7 +146,7 @@
               <path d="M15 8l4 4" />
             </svg>
 
-          </button>
+          </a>
 
           <ul class="infos d-flex between desk-show" data-aos="fade-up" data-aos-duration="1000">
             <li>
