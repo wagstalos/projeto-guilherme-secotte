@@ -12,8 +12,14 @@ h2 {
         position: absolute;
         width: 62px;
         height: 2px;
-        bottom: -8px;
+        bottom: -16px;
+        height: 2px;
+        left: 50%; /* Move o elemento 50% para a direita */
+        transform: translateX(-50%); /* Ajusta para centralizar o elemento */
         background-color: $brand-color-main;
+    }
+
+    @include responsive($tablet) {
     }
 }
 
