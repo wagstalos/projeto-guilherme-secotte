@@ -71,8 +71,24 @@
             &__bottom {
                 z-index: 4;
                 max-width: 300px;
+                margin-left: $gutter*2;
                 &-title {
                     color: $white;
+                    display: flex;
+                    align-items: center;
+
+                    &::before {
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        background-color: $white;
+                        border-radius: 100%;
+                        position: absolute;
+                        // top: 0;
+                        left: 20px;
+                        z-index: 10;
+                        margin-right: 16px;
+                    }
                 }
             }
 
