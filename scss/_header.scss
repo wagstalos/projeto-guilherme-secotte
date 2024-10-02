@@ -65,7 +65,7 @@ header {
                     align-items: center;
 
                     &:hover {
-                        color: $brand-blue-light;
+                        color: $brand-color-main;
                         opacity: 1;
                     }
                 }
@@ -74,7 +74,7 @@ header {
                     border-bottom: 2px solid $brand-color-main;
 
                     a {
-                        color: $brand-blue-light;
+                        color: $brand-color-main;
                     }
                 }
             }
@@ -181,7 +181,7 @@ header {
     border-radius: $border-radius * 10;
     margin-right: $gutter * 2;
     display: none;
-    // position: fixed;
+
     .icons-dots {
         display: none;
     }
