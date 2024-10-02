@@ -18,9 +18,6 @@ h2 {
         transform: translateX(-50%); /* Ajusta para centralizar o elemento */
         background-color: $brand-color-main;
     }
-
-    @include responsive($tablet) {
-    }
 }
 
 h3 {

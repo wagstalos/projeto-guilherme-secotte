@@ -1,0 +1,100 @@
+.s-faq {
+    padding: 90px 0;
+    h2 {
+        margin-bottom: $gutter * 2;
+    }
+
+    .accordion {
+        margin-top: 80px;
+        .accordion-item {
+            margin-top: 10px;
+            border-bottom: 1px solid rgba(197, 223, 255, 0.4509803922);
+            button[aria-expanded="true"] {
+                border-bottom: none;
+            }
+        }
+        button {
+            position: relative;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 2em 0;
+            font-weight: 600;
+            color: $black;
+            font-size: 1.15rem;
+
+            border: none;
+            background: none;
+            outline: none;
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                color: $blue;
+                &::after {
+                    cursor: pointer;
+                    color: $blue;
+                    border: 1px solid $blue;
+                }
+            }
+            .accordion-title {
+                padding: 1em 1.5em 1em 0;
+                font-size: 2rem;
+            }
+            .icon {
+                display: inline-block;
+                position: absolute;
+                top: 18px;
+                right: 0;
+                width: 22px;
+                height: 22px;
+                // border: 1px solid;
+                border-radius: 22px;
+                &::before {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    top: 9px;
+                    left: 5px;
+                    width: 10px;
+                    height: 2px;
+                    background: currentColor;
+                }
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    top: 5px;
+                    left: 9px;
+                    width: 2px;
+                    height: 10px;
+                    background: currentColor;
+                }
+            }
+        }
+        button[aria-expanded="true"] {
+            color: $brand-color-main;
+            .icon {
+                &::after {
+                    width: 0;
+                }
+            }
+            + .accordion-content {
+                opacity: 1;
+                max-height: 9em;
+                transition: all 200ms linear;
+                will-change: opacity, max-height;
+                margin-bottom: 16px;
+                max-width: 80%;
+            }
+        }
+        .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition:
+                opacity 200ms linear,
+                max-height 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }
+}
