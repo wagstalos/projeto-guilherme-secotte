@@ -4,15 +4,15 @@
     .d-flex {
         justify-content: space-between;
         align-items: center;
-        margin-top: 8rem;
+        margin-top: 16rem;
     }
 
     &__image {
-        width: 55%;
+        width: 45%;
     }
 
     &__text {
-        width: 40%;
+        width: 50%;
         &-icon-brain {
             background-color: aliceblue;
             padding: 4px;
