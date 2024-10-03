@@ -123,7 +123,7 @@
         right: 14px;
         bottom: 14px;
 
-        margin-top: 16px;
+        margin-top: $gutter*2;
 
         svg {
             transition: transform 0.3s ease;
@@ -169,6 +169,7 @@
                         p {
                             line-height: 100%;
                             font-size: 1.6rem;
+                            margin: $gutter * 2;
                         }
                     }
                 }

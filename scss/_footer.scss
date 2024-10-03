@@ -131,7 +131,6 @@ footer {
     @include responsive(500px) {
         .credits {
             z-index: 11;
-            background-color: $green;
         }
 
         .footer_description {
