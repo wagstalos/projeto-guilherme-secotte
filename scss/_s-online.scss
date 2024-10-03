@@ -54,11 +54,11 @@
     }
 
     &__img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/consultorio.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/consultorio.webp");
     }
 
     &__img2 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/senior.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/senior.webp");
     }
 
     @include responsive($tablet) {
