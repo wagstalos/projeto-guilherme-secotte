@@ -1,0 +1,72 @@
+.s-online {
+    padding: 90px 0;
+    position: relative;
+
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    .btn-project {
+        backdrop-filter: blur(10px);
+        background: rgba(119, 119, 119, 0.3);
+        color: $white;
+        padding: 0.1rem 3rem;
+        border-radius: 48px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img,
+    &__img2 {
+        width: 48%;
+        height: 330px;
+        margin-top: $gutter * 4;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-radius: 20px;
+
+        &-bottom {
+            padding: 16px;
+            position: absolute;
+            bottom: 16px;
+            margin: 8px;
+        }
+    }
+
+    &__img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/consultorio.jpg");
+    }
+
+    &__img2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/senior.jpg");
+    }
+
+    @include responsive($tablet) {
+        .d-flex {
+            flex-direction: column;
+        }
+        &__img,
+        &__img2 {
+            width: 100%;
+        }
+    }
+}
