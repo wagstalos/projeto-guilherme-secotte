@@ -42,15 +42,23 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        // background-size: 100%;
+        background-position: center top;
         position: relative;
         border-radius: 20px;
 
+        transition: all 0.9s ease;
+
         &-bottom {
-            padding: 16px;
+            padding: $gutter * 2;
             position: absolute;
-            bottom: 16px;
-            margin: 8px;
+            bottom: $gutter * 2;
+            // margin: $gutter;
         }
+
+        // &:hover {
+        //     background-size: 120%;
+        // }
     }
 
     &__img {

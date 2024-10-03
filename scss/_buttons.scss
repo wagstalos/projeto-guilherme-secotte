@@ -5,10 +5,12 @@
     line-height: 4.5rem;
     font-weight: 500;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary {
-    background-color: #3e81d1;
+    background-color:  $brand-color-main;
     font-weight: 500;
     color: $brand-black;
     transition: background-color 0.3s;
