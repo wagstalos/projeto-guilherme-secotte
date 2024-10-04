@@ -27,7 +27,7 @@ footer {
         }
 
         a {
-            color: $gray-300;
+            color: $gray-500;
             margin: $gutter 0;
 
             &:hover {
@@ -55,7 +55,7 @@ footer {
                     margin-right: $gutter;
                     display: flex;
                     align-items: center;
-                    color: $gray-300;
+                    color: $gray-500;
                 }
             }
         }
