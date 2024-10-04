@@ -63,7 +63,7 @@ gulp.task("alljs", gulpJs);
 
 function pluginsJs() {
   return gulp
-    .src(["js/lib/aos.min.js", "./js/lib/swiper.min.js"])
+    .src(["js/lib/aos.min.js"])
     .pipe(concat("plugins.js"))
     .pipe(gulp.dest("js/"))
     .pipe(browserSync.stream());

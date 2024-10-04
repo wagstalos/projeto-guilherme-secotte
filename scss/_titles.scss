@@ -51,14 +51,14 @@ p {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 150%;
-    color: $gray-600;
+    color: #5e6981;
 
     @include responsive($tablet) {
         font-size: 1.6rem;
     }
 }
 .subtitle {
-    color: $brand-color-main;
+    color: #0c3c74;
     display: table;
 
     font-size: 1.4rem;
