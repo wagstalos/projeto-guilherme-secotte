@@ -6,6 +6,11 @@
     background-color: #3d81c9;
     position: relative;
 
+    .subtitle {
+        color: $white;
+        margin-bottom: $gutter;
+    }
+
     .d-flex {
         align-items: center;
         justify-content: center;
