@@ -24,14 +24,23 @@
     .btn-project {
         backdrop-filter: blur(10px);
         background: rgba(119, 119, 119, 0.3);
+        border: 1px solid transparent;
         color: $white;
         padding: 0.1rem 3rem;
         border-radius: 48px;
         margin-top: 20px;
         font-size: 1.5rem;
+
         display: inline-flex;
         justify-content: center;
         align-items: center;
+
+        transition: all .3s ease;
+
+        &:hover{
+            border: 1px solid $white;
+            background: rgba(119, 119, 119, 0.1);
+        }
     }
 
     &__img,
