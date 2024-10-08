@@ -2,8 +2,7 @@
     display: flex;
 }
 
-
-iframe{
+iframe {
     border-radius: 10px;
 }
 
@@ -61,6 +60,11 @@ iframe{
 }
 .mt-4 {
     margin-top: 1.5rem;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
+    padding-top: 90px !important;
 }
 .mt-5 {
     margin-top: 3rem;
