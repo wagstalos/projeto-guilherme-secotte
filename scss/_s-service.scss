@@ -39,7 +39,7 @@
             }
 
             span {
-                color: $brand-color-main;
+                color: #94c4ff;
                 font-size: 8rem;
             }
         }
@@ -61,7 +61,7 @@
             background-size: cover;
             background-position: 0px -34px;
 
-            background-image: url("../img/cerebro.jpg");
+            background-image: url("../img/bg-service.webp");
 
             &::before {
                 content: "";
