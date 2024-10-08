@@ -43,9 +43,7 @@
 
         &-links {
             display: flex;
-
         }
-
 
         h3 {
             margin-left: $gutter * 2;
@@ -54,19 +52,15 @@
 
         a {
             display: flex;
-            padding: 1.2rem 2rem;
             font-size: 1.6rem;
-            background-color: $brand-blue-light;
-            color: $white;
-            // border: 2px solid $gray-200;
+
+            color: $brand-blue-light;
             border-radius: 8px;
+
+            text-decoration: underline;
 
             margin-left: $gutter * 2;
             transition: all 0.3s ease-in;
-
-            &:hover {
-                background-color: $brand-color-main;
-            }
         }
     }
 
@@ -123,6 +117,14 @@
                 padding: 1.2rem 1.6rem;
                 margin-left: 0;
                 height: 40px;
+            }
+        }
+    }
+
+    @include responsive($mobile) {
+        &__btns {
+            &-links {
+                flex-direction: column;
             }
         }
     }
