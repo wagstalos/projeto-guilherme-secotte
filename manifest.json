@@ -1,15 +1,16 @@
 {
     "name": "Guilherme Secotte",
     "short_name": "Guilherme Secotte",
+    "description": "Mestre em Psicologia clínica pela - USP & Psicólogo pela - UNESP",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#317EFB",
     "icons": [
       {
-        "src": "img/perfil.webp",
+        "src": "img/icons/maskable_icon_x192.png",
         "sizes": "192x192",
-        "type": "image/webp"
+        "type": "image/png"
       }
     ]
   }
