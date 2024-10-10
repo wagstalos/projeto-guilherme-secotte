@@ -1,12 +1,14 @@
-const CACHE_NAME = "v1";
+const CACHE_NAME = "v2";
 const URLS_TO_CACHE = [
+  "/img/icons/maskable_icon_x192.webp",
   "/img/perfil.webp",
+  "/img/maps.jpg",
   "/img/cerebro.webp",
   "/img/consultorio.webp",
-  "/img/guilherme.webp",
+  "/img/guilherme.png",
   "/img/senior.webp",
   "/img/family.webp",
-  "/img/video.webp",
+  "/img/thumb.webp",
   "/img/img3.webp",
   "/img/tag.svg",
   "/img/tag2.svg",
