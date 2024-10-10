@@ -1,4 +1,4 @@
-const CACHE_NAME = "v2";
+const CACHE_NAME = "v3";
 const URLS_TO_CACHE = [
   "/img/icons/maskable_icon_x192.webp",
   "/img/perfil.webp",
