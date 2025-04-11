@@ -27,6 +27,27 @@
         }
     }
 
+    &__buttons {
+        display: flex;
+
+        .btn-video {
+            display: flex;
+            align-items: center;
+
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: $brand-color-main;
+
+            background: transparent;
+            padding: 0.3rem 3rem;
+            margin-left: 20px;
+            border-radius: 10px;
+            svg {
+                margin-right: $gutter;
+            }
+        }
+    }
+
     &__text {
         width: 55%;
 
@@ -53,8 +74,6 @@
 
             color: $black;
             max-width: 74rem;
-
-            
         }
 
         .description {
@@ -137,8 +156,21 @@
             .title {
                 font-size: 5.5rem;
                 line-height: 100%;
-                strong{
+                strong {
                     font-size: 64px;
+                }
+            }
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .btn-video {
+                margin-left: 0;
+                margin-top: 20px;
+                svg {
+                    margin-left: 0;
                 }
             }
         }
