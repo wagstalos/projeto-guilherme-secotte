@@ -49,10 +49,12 @@
         .title {
             font-size: 6.5rem;
             line-height: 120%;
-            font-weight: 500;
+            font-weight: 300;
 
             color: $black;
             max-width: 74rem;
+
+            
         }
 
         .description {
@@ -134,7 +136,10 @@
         &__text {
             .title {
                 font-size: 5.5rem;
-                line-height: 78%;
+                line-height: 100%;
+                strong{
+                    font-size: 64px;
+                }
             }
         }
     }
