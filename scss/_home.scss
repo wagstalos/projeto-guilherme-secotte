@@ -1,7 +1,7 @@
 .s-hero {
     width: 100%;
     padding-top: 8rem;
-    height: 100vh;
+    height: 90vh;
     @include flex(row, center, center);
 
     background: linear-gradient(180deg, rgba(218, 247, 245, 0) 0%, #e1faff 1%, rgba(218, 247, 245, 0) 98.72%);
@@ -53,8 +53,8 @@
 
         .lead {
             color: $gray-400;
-            font-size: 2.3rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 500;
 
             border-left: 2px solid #afd3fe;
             padding-left: 16px;
