@@ -17,8 +17,10 @@
             font-weight: 400;
         }
         &__subtitle {
-            max-width: 65%;
+            max-width: 63%;
             font-size: 1.8rem;
+            border-left: 2px solid rgba(197, 223, 255, 0.4509803922);
+            padding-left: 16px;
         }
     }
 
