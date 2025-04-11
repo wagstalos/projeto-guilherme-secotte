@@ -133,8 +133,8 @@
     @include responsive($laptop) {
         &__text {
             .title {
-                font-size: 4.2rem;
-                line-height: 110%;
+                font-size: 5.5rem;
+                line-height: 78%;
             }
         }
     }
@@ -164,11 +164,11 @@
             }
 
             .lead {
-                margin: 0 auto;
+                margin: 20px auto;
                 max-width: 80%;
                 border-left: none;
                 padding-left: 0;
-                font-size: 1.8rem;
+                font-size: 1.4rem;
                 // span {
                 //     display: none;
                 // }
@@ -185,6 +185,7 @@
 
         &__image {
             width: 100%;
+            margin-top: 30px;
             .tag1 {
                 top: 50%;
             }
