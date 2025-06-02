@@ -83,7 +83,7 @@ fetch(csvUrl)
 
       breakpoints: {
         600: {
-          slidesPerView: 1.2,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         900: {
