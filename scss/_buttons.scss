@@ -10,7 +10,7 @@
 }
 
 .btn-primary {
-    background-color:  $brand-color-main;
+    background-color: $brand-color-main;
     font-weight: 500;
     color: $brand-black;
     transition: background-color 0.3s;
@@ -40,5 +40,36 @@
         height: 45px;
         padding: 0 2rem;
         font-size: 1.5rem;
+    }
+}
+
+.btn-avaliar {
+    color: #4d5156;
+    border: #d2d2d2 1px solid;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    display: inline-flex;
+
+    .svg {
+        color: #1a73e8;
+    }
+}
+
+.btn-seemore {
+    font-size: 1.6rem;
+    color: #1a73e8;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.buttons_google_reviews {
+    display: flex;
+    align-items: center;
+
+    .svg {
+        color: #1a73e8;
     }
 }
