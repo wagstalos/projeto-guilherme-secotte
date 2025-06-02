@@ -8,6 +8,13 @@
     font-size: 18px;
     margin-bottom: 6px;
 }
+
+.swiper-slide {
+    background-color: #f5f7fa;
+    padding: 28px;
+    border-radius: 20px;
+}
+
 .swiper-scrollbar {
     display: none;
 }
@@ -17,7 +24,7 @@
 }
 .swiper-button-next,
 .swiper-button-prev {
-    width: 35px; 
+    width: 35px;
     height: 35px;
     background-size: 20px 20px;
     background-color: rgba(255, 255, 255, 0.5);

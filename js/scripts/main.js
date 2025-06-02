@@ -66,6 +66,7 @@ fetch(csvUrl)
     // Inicializar o Swiper depois que os slides forem criados
     var swiper = new Swiper(".mySwiper", {
       loop: false,
+
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
@@ -91,7 +92,7 @@ fetch(csvUrl)
           spaceBetween: 20,
         },
         1200: {
-          slidesPerView: 2,
+          slidesPerView: 3,
           spaceBetween: 40,
         },
       },
