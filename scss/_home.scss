@@ -136,6 +136,11 @@
             margin-right: $gutter;
             border-radius: 8px;
             font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: $gutter * 2;
+            }
         }
 
         &__title {
@@ -210,21 +215,20 @@
                 //     display: none;
                 // }
             }
-
-            .desk-show {
-                display: none;
-            }
         }
 
         .mob-show {
             display: block;
+        }
+        .desk-show {
+            display: none;
         }
 
         &__image {
             width: 100%;
             margin-top: 30px;
             .tag1 {
-                top: 50%;
+                top: 15%;
             }
         }
 
