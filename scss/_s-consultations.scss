@@ -84,6 +84,7 @@
     }
 
     @include responsive($tablet) {
+        margin: 10px;
         .d-flex {
             flex-direction: column;
         }
