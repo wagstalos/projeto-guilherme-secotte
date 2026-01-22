@@ -4,7 +4,7 @@ document
   .addEventListener("click", function () {
     var youtubeDiv = document.getElementById("youtube-video");
     youtubeDiv.innerHTML =
-      '<iframe width="100%" height="315" src="https://www.youtube.com/embed/oZysMeFfN9w?si=Xkkei4cnV9e3Chc8&autoplay=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+      '<iframe width="90%" height="315" src="https://www.youtube.com/embed/R_-BPmqSjHw?si=53vJ4HEwPN5RM1oP&autoplay=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
   });
 
 document.getElementById("map-thumbnail").addEventListener("click", function () {

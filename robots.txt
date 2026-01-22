@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://psisecotte.com.br/sitemap.xml
